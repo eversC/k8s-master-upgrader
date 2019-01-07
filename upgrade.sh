@@ -23,7 +23,7 @@ if [ "$invalid" = true ] ; then
     exit 1
 fi
 
-gcloud auth activate-service-account $GCP_SA_ACCOUNT --key-file=./key.json
+gcloud auth activate-service-account $GCP_SA_ACCOUNT --key-file=/home/gcloud/key.json
 
 greatest_master_version=$(gcloud container get-server-config --zone $GCP_ZONE --project $GCP_PROJECT --format="json" | jq -r '.validMasterVersions[0]')
 
