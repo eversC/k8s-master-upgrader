@@ -30,6 +30,9 @@ GCP_ZONE=europe-west2-a
 SLACK_WEBHOOK_URL=https://hooks.slack.com/services/**change_me**/**change_me**/**change_me**
 ```
 
+The key.json for the GCP Service Account used in `gcloud` calls needs to be
+placed at the path `/home/gcloud/key.json`
+
 ## Env Vars
 
 | Name        | Required           | Default  |
